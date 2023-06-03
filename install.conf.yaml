@@ -9,12 +9,12 @@
 
 # Create neccessary folders
 - create:
-#  - ~/Inbox
+  - ~/Inbox
   - ~/Downloads
   - ~/Documents
-#  - ~/Projects
-#  - ~/Notes
-  # - ~/Work
+  - ~/Projects
+  - ~/Notes
+  - ~/Work
 
 # Update submodules
 - shell:
@@ -28,7 +28,7 @@
 
 - link:
     ~/.dotfiles: ''
-    # ~/.gitconfig: git/gitconfig
+    ~/.gitconfig: git/gitconfig
     ~/.gitignore_global: git/gitignore_global
     # ~/.vim: .vim
     # ~/.vimrc: .vim/.vimrc
@@ -37,23 +37,23 @@
 
 # Install Apps
 - shell:
-  # - [brew bundle, "Installing Apps"]
+  - [brew bundle, "Installing Apps"]
 
 # Install VS Code config
-# - link:
-#     "~/Library/Application Support/Code/User/":
-#       glob: true
-#       force: true
-#       path: vscode/*
-# - shell:
-#   - [vscode/install_extensions.sh, "Install VS Code extensions"]
+- link:
+    "~/Library/Application Support/Code/User/":
+      glob: true
+      force: true
+      path: vscode/*
+- shell:
+  - [vscode/install_extensions.sh, "Install VS Code extensions"]
 
 # Install OSX settings
 # - shell:
 #   - [osx/settings.sh, "Setup OSX defaults"]
 
 # Install programming version management
-  #- [rvm/install.sh, "Installing RVM"]
-  #- [nvm/install.sh, "Installing NVM"]
-  #- [gvm/install.sh, "Installing GVM"]
-  #- [gobrew/install.sh, "Installing Gobrew"]
+  - [rvm/install.sh, "Installing RVM"]
+  - [nvm/install.sh, "Installing NVM"]
+  - [gvm/install.sh, "Installing GVM"]
+  - [gobrew/install.sh, "Installing Gobrew"]

@@ -32,3 +32,8 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# Tool generated files #
+########################
+**/wire_gen.go
+**/
