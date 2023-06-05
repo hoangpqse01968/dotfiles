@@ -49,10 +49,11 @@
   - [vscode/install_extensions.sh, "Install VS Code extensions"]
 
 # Install OSX settings
-# - shell:
-#   - [osx/settings.sh, "Setup OSX defaults"]
+- shell:
+  - [osx/settings.sh, "Setup OSX defaults"]
 
 # Install programming version management
+- shell:
   - [rvm/install.sh, "Installing RVM"]
   - [nvm/install.sh, "Installing NVM"]
   - [gvm/install.sh, "Installing GVM"]

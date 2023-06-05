@@ -36,4 +36,6 @@ Thumbs.db
 # Tool generated files #
 ########################
 **/wire_gen.go
-**/
+*_easyjson.go
+**/*_mock.go
+**/*_gen.go
